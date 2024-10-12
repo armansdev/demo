@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #a1a1a1;
+            border-collapse: collapse;
+            text-align: left;
+            padding: 10px 100px 10px 10px;
+        }
+
+        th {
+            color: black;
+            background-color: #008000;
+        }
+
+        tfoot{
+            background-color: #E6E6E6;
+        }
+    </style>
+    <title>Create a Table</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price per Unit</th>
+            <th>Description</th>
+            <th>Total Price</th>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>2</td>
+            <td>$10</td>
+            <td>This is product 1</td>
+            <td><strong>$20</strong></td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>3</td>
+            <td>$20</td>
+            <td>This is product 2</td>
+            <td><strong>$60</strong></td>
+        </tr>
+        <tfoot>
+            <td colspan="4"><strong>Sum</strong></td>
+            <td><strong>$80</strong></td>
+        </tfoot>
+    </table>
+</body>
+
+</html>
