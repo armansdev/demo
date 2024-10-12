@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a form</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Feedback form for our website</h1>
+    <form>
+        <!-- Dropdown menu for feedback type -->
+        <label for="feedbackType">Type of feedback:</label>
+        <select name="feedbackType" id="feedbackType">
+            <option value="service">Service</option>
+            <option value="product">Product</option>
+            <option value="complaint">Complaint</option>
+        </select>
+        <br> <br>
+        <!-- Textarea for user's message -->
+        <label for="message">Enter your feedback:</label>
+        <textarea name="message" id="message"></textarea>
+        <br><br>
+        <!-- Radio buttons for website rating -->
+        <label for="one">Select your rating:</label><br>
+        <input type="radio" id="one" name="rating" value="1">
+        <label for="one">1</label><br>
+        <input type="radio" id="two" name="rating" value="2">
+        <label for="two">2</label><br>
+        <input type="radio" id="three" name="rating" value="3">
+        <label for="three">3</label> <br>
+        <input type="radio" id="four" name="rating" value="4">
+        <label for="four">4</label><br>
+        <input type="radio" id="five" name="rating" value="5">
+        <label for="five">5</label><br>
+        <br>
+        <!-- An input for user's age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100">
+        <br><br>
+        <!-- User's email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <!-- Password input field -->
+        <label for="password">Password (at least 8 characters):</label>
+        <input type="password" name="password" id="password" pattern=".{8,}" required>
+        <br><br>
+        <!-- An optional website URL input field -->
+        <label for="url">Enter website URL (optional):</label>
+        <input type="url" name="url" id="url">
+        <br><br>
+        <!-- Checkbox for T&C -->
+        <input type="checkbox" id="terms" name="terms" value="T&C">
+        <label for="terms">I accept to all the terms and conditions</label>
+        <br><br>
+        <!-- A submission button -->
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
