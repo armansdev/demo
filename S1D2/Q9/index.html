@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Card</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            font-family: 'Press Start 2P', cursive;
+            text-align: left;
+            margin: 20px 5px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .panda-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-family: 'Baloo 2', sans-serif;
+            color: #BCBE61;
+            margin-bottom: 2px;
+        }
+
+        .details {
+            color: #767676;
+            font-size: 16px;
+            margin-top: 2px;
+            margin-bottom: 10px;
+        }
+
+        .year {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Title</h1>
+    <h3 class="card-title">Panda Card</h3>
+    <div class="card">
+        <img class="panda-image" src="panda.webp" alt="Panda Image">
+        <h2 class="name">John Doe</h2>
+        <p class="details">Computer Science 1<br>Computer Science 2</p>
+        <p class="year">Year: 3</p>
+        <div class="stars">☆☆☆☆☆</div>
+    </div>
+
+</body>
+
+</html>
